@@ -22,13 +22,6 @@
 | 6352      | 192     | 07/26/2022 00:00:00 | 69852      | 3     |
 | 4517      | 981     | 07/05/2022 00:00:00 | 69852      | 2     |
 
-### Example Output:
-
-| mth | product | avg_stars |
-|-----|---------|-----------|
-| 6   | 50001   | 3.50      |
-| 6   | 69852   | 4.00      |
-| 7   | 69852   | 2.50      |
 
 ## SQL Query for Generating the Output
 
@@ -40,3 +33,12 @@ FROM reviews
 GROUP by mth,product
 ORDER BY mth,product;
 ```
+
+
+### Output Example
+
+| mth | product | avg_stars |
+|-----|---------|-----------|
+| 6   | 50001   | 3.50      |
+| 6   | 69852   | 4.00      |
+| 7   | 69852   | 2.50      |
